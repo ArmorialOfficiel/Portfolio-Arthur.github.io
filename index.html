@@ -18,6 +18,7 @@
       <li><a href="#projets">Projets</a></li>
       <li><a href="#apropos">À propos</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="#taches">Tâches</a></li>
       <li><a href="alternance.html">Alternance</a></li> <!-- Nouveau lien -->
       <li><a href="cv.pdf" target="_blank">📄 Mon CV</a></li> <!-- Nouveau lien -->
     </ul>
@@ -57,7 +58,57 @@
         <li><a href="projet2.html">Projet 2 – Réseau de tablettes</a></li>
       </ul>
     </section>
-    
+    <section id="tableau-synthese" class="content">
+  <h2>📄 Tableau de synthèse</h2>
+  <iframe 
+    src="pdfs/tableau-synthese.pdf" 
+    width="100%" 
+    height="600px" 
+    style="border: none;">
+  </iframe>
+</section>
+    <section id="taches" class="content">
+  <h2>🗂️ Tâches réalisées</h2>
+  <div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-button">Mise en place d'un serveur RADIUS (NPS)</button>
+    <div class="accordion-content">
+      <p>
+        Installation et configuration d’un serveur RADIUS sous Windows Server 2012 avec filtrage d'authentification (par groupe AD).
+      </p>
+      <a href="tache1.html" class="detail-link">Voir plus de détails</a>
+    </div>
+  </div>
+</div>
+
+
+    <div class="accordion">
+    <div class="accordion-item">
+      <button class="accordion-button">Mise en place d'un serveur FTP pour scanner sur répertoire personnel</button>
+      <div class="accordion-content">
+        <p>Installation et configuration d’un serveur FTP sur Gespage avec redirection des scans sur répertoire personnel de l'utilisateur.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-button">Déploiement d'une GPO</button>
+      <div class="accordion-content">
+        <p>Création d’une stratégie de groupe (GPO) pour appliquer des restrictions sur les postes utilisateurs (bureau, accès aux applications, scripts de connexion).</p>
+        <p>Sur un serveur Windows (Machine Virtuelle) avec un contrôleur de domaine qui gère le réseau pédagogique</p>
+        <p>Voici une capture d'écran d'une stratégie de groupe que j'ai pu réaliser:</p>
+        <img src="images/GPO-windows.jpg" alt="GPO Windows">
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-button">Supervision d'équipements réseau</button>
+      <div class="accordion-content">
+        <p>Surveillance du parc informatique avec GLPI et l'agent FusionInventory, configuration de tickets pour les incidents réseau ou matériels.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <section id="apropos" class="content">
       <img src="./images/apropos.jpg" alt="À propos" style="width:100%; max-height:300px; object-fit:cover; border-radius:8px; margin-bottom:20px;">

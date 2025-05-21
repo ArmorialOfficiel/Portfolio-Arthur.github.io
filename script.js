@@ -16,3 +16,9 @@ const images = [
   updateBackground();
   setInterval(updateBackground, 5000);
   
+  document.querySelectorAll(".accordion-button").forEach(button => {
+  button.addEventListener("click", () => {
+    const item = button.parentElement;
+    item.classList.toggle("active");
+  });
+});
